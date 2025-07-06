@@ -197,7 +197,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - **Naruto Series**: For the amazing characters and inspiration
-- **Next.js Team**: For the incredible framework
 - **Framer Motion**: For smooth animations
 - **shadcn/ui**: For beautiful UI components
 - **Tailwind CSS**: For utility-first styling
@@ -206,8 +205,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or need help:
 - Open an issue on GitHub
-- Check the documentation
-- Join our community discussions
 
 ---
 
