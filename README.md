@@ -75,6 +75,74 @@ npm start
 npm run lint
 ```
 
+## 🐳 Docker Deployment
+
+### Building the Docker Image
+
+Build the Docker image:
+```bash
+docker build -t anime-note .
+```
+
+### Running the Container
+
+Run the container locally:
+```bash
+docker run -p 3000:3000 anime-note
+```
+
+Or run in detached mode (background):
+```bash
+docker run -d -p 3000:3000 --name anime-note-container anime-note
+```
+
+Access the application at [http://localhost:3000](http://localhost:3000)
+
+### Docker Commands
+
+**View running containers:**
+```bash
+docker ps
+```
+
+**View container logs:**
+```bash
+docker logs anime-note-container
+```
+
+**Stop the container:**
+```bash
+docker stop anime-note-container
+```
+
+**Remove the container:**
+```bash
+docker rm anime-note-container
+```
+
+### Pushing to Docker Hub
+
+1. **Login to Docker Hub:**
+   ```bash
+   docker login
+   ```
+
+2. **Tag the image** (replace `YOUR_USERNAME` with your Docker Hub username):
+   ```bash
+   docker tag anime-note YOUR_USERNAME/anime-note:latest
+   ```
+
+3. **Push the image:**
+   ```bash
+   docker push YOUR_USERNAME/anime-note:latest
+   ```
+
+4. **Pull and run from Docker Hub:**
+   ```bash
+   docker pull YOUR_USERNAME/anime-note:latest
+   docker run -p 3000:3000 YOUR_USERNAME/anime-note:latest
+   ```
+
 ## 🎮 Usage
 
 ### Main Features

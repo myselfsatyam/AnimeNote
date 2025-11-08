@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove static export for better performance
-  // output: 'export',
+  // Enable standalone output for Docker
+  output: 'standalone',
   
   // Enable performance optimizations
   experimental: {
